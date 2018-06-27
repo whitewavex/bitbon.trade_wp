@@ -1,0 +1,14 @@
+.slide__title {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    @include respond-to(sl) {
+        font-size: 37px;
+    }
+    @include respond-to(xl) {
+        font-size: 35px;
+    }
+    @include respond-to(lg) {
+        font-size: 24px;
+    }
+}

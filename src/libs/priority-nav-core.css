@@ -1,0 +1,44 @@
+/*
+ * Core styles for PriorityNav.js
+ * These styles are not optional and should always be included
+ *
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+.priority-nav {
+  white-space: nowrap;
+  /*
+    * Makes sure the menu's are inline-block so they don't take up
+    * the entire width of its parent. This will break the plugin.
+    */ }
+
+.priority-nav > ul {
+  display: inline-block; }
+
+.priority-nav > ul > li {
+  display: inline-block; }
+
+.priority-nav-has-dropdown .priority-nav__dropdown-toggle {
+  position: relative; }
+
+.priority-nav__wrapper {
+  position: relative; }
+
+.priority-nav__dropdown {
+  position: absolute;
+  visibility: hidden; }
+
+.priority-nav__dropdown.show {
+  visibility: visible; }
+
+.priority-nav__dropdown-toggle {
+  visibility: hidden;
+  position: absolute; }
+
+.priority-nav-is-visible {
+  visibility: visible; }
+
+.priority-nav-is-hidden {
+  visibility: hidden; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW9yaXR5LW5hdi1jb3JlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFDSDtFQUNFLG9CQUFtQjtFQUNuQjs7O01BR0ksRUFDTDs7QUFFRDtFQUNFLHNCQUFxQixFQUN0Qjs7QUFFRDtFQUNFLHNCQUFxQixFQUN0Qjs7QUFFRDtFQUNFLG1CQUFrQixFQUNuQjs7QUFFRDtFQUNFLG1CQUFrQixFQUNuQjs7QUFFRDtFQUNFLG1CQUFrQjtFQUNsQixtQkFBa0IsRUFDbkI7O0FBRUQ7RUFDRSxvQkFBbUIsRUFDcEI7O0FBRUQ7RUFDRSxtQkFBa0I7RUFDbEIsbUJBQWtCLEVBQ25COztBQUVEO0VBQ0Usb0JBQW1CLEVBQ3BCOztBQUVEO0VBQ0UsbUJBQWtCLEVBQ25CIiwiZmlsZSI6InByaW9yaXR5LW5hdi1jb3JlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBDb3JlIHN0eWxlcyBmb3IgUHJpb3JpdHlOYXYuanNcbiAqIFRoZXNlIHN0eWxlcyBhcmUgbm90IG9wdGlvbmFsIGFuZCBzaG91bGQgYWx3YXlzIGJlIGluY2x1ZGVkXG4gKlxuICogRnJlZSB0byB1c2UgdW5kZXIgdGhlIE1JVCBMaWNlbnNlLlxuICogaHR0cDovL3R3aXR0ZXIuY29tL0dpanNSb2dlXG4gKi9cbi5wcmlvcml0eS1uYXYge1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAvKlxuICAgICogTWFrZXMgc3VyZSB0aGUgbWVudSdzIGFyZSBpbmxpbmUtYmxvY2sgc28gdGhleSBkb24ndCB0YWtlIHVwXG4gICAgKiB0aGUgZW50aXJlIHdpZHRoIG9mIGl0cyBwYXJlbnQuIFRoaXMgd2lsbCBicmVhayB0aGUgcGx1Z2luLlxuICAgICovXG59XG5cbi5wcmlvcml0eS1uYXYgPiB1bCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn1cblxuLnByaW9yaXR5LW5hdiA+IHVsID4gbGkge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG59XG5cbi5wcmlvcml0eS1uYXYtaGFzLWRyb3Bkb3duIC5wcmlvcml0eS1uYXZfX2Ryb3Bkb3duLXRvZ2dsZSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLnByaW9yaXR5LW5hdl9fd3JhcHBlciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLnByaW9yaXR5LW5hdl9fZHJvcGRvd24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbn1cblxuLnByaW9yaXR5LW5hdl9fZHJvcGRvd24uc2hvdyB7XG4gIHZpc2liaWxpdHk6IHZpc2libGU7XG59XG5cbi5wcmlvcml0eS1uYXZfX2Ryb3Bkb3duLXRvZ2dsZSB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG4ucHJpb3JpdHktbmF2LWlzLXZpc2libGUge1xuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xufVxuXG4ucHJpb3JpdHktbmF2LWlzLWhpZGRlbiB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbn1cbiJdfQ== */

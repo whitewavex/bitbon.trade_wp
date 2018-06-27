@@ -1,0 +1,9 @@
+.bitbon-info__triangle {
+    position: absolute;
+    top: -49px;
+    left: 19.5%;
+    transform: rotate(180deg);
+    @include respond-to(md) {
+        display: none;
+    }
+}

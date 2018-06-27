@@ -1,0 +1,28 @@
+.navigation__list_small {
+    
+    li {
+        
+        a {
+            font-size: 12px;
+            color: #b2b2b2;
+            
+            &::after {
+                background-color: #b2b2b2;
+            }
+            
+            &:hover {
+                color: #b2b2b2;
+            }
+        }
+    }
+    
+    .current-menu-item {
+        
+        a {
+            
+            &::after {
+                background-color: #b2b2b2;
+            }
+        }
+    }
+}

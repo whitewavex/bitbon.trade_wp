@@ -1,0 +1,22 @@
+.bitbon-info__title {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1.8;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    @include respond-to(xl) {
+        font-size: 20px;
+    }
+
+    span {
+        @include respond-to(xl) {
+            font-size: 40px;
+        }
+        @include respond-to(md) {
+            font-size: 26px;
+        }
+    }
+}

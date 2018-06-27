@@ -1,0 +1,8 @@
+.navigation {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include respond-to(md) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}

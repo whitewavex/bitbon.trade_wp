@@ -1,0 +1,18 @@
+.header__logo {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transition: .5s;
+    @include respond-to(lg) {
+        right: 7px;
+    }
+    @include respond-to(sm) {
+        right: 25px;
+    }
+    
+    img {
+        transition: .5s;
+    }
+}

@@ -1,0 +1,20 @@
+.slider__button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+    margin-left: 0px;
+    background-color: transparent;
+    border: none;
+    opacity: .7;
+    cursor: pointer;
+    z-index: 9;
+    
+    &:hover {
+        opacity: 1;
+    }
+    
+    &:focus {
+        outline: none !important;
+    }
+}

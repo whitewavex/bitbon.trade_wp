@@ -1,0 +1,78 @@
+.bitbon-info__link {
+    display: block;
+    float: left;
+    width: 25%;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    @include respond-to(xs) {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.bitbon-info__link:hover > .bitbon-info__button {
+    background-color: #fff;
+    background-position: 7px -141px;
+    @include respond-to(xl) {
+        background-position: 2px -145px;
+    }
+    @include respond-to(sm) {
+        background-position: 2px -4px;
+    }   
+}
+
+.bitbon-info__link:nth-child(2) > .bitbon-info__button {
+    background-position: -62px -68px;
+    @include respond-to(xl) {
+        background-position: -67px -73px;
+    }
+}
+
+.bitbon-info__link:hover.bitbon-info__link:nth-child(2) > .bitbon-info__button {
+    background-position: -62px -138px;
+    @include respond-to(xl) {
+        background-position: -67px -144px;
+    }
+    @include respond-to(sm) {
+        background-position: -67px -4px;
+    }
+}
+
+.bitbon-info__link:nth-child(3) > .bitbon-info__button {
+    background-position: -138px -69px;
+    @include respond-to(xl) {
+        background-position: -142px -75px;
+    }
+}
+
+.bitbon-info__link:hover.bitbon-info__link:nth-child(3) > .bitbon-info__button {
+    background-position: -138px -139px;
+    @include respond-to(xl) {
+        background-position: -142px -145px;
+    }
+    @include respond-to(sm) {
+        background-position: -142px -4px;
+    }
+}
+
+.bitbon-info__link:nth-child(4) > .bitbon-info__button {
+    background-position: -205px -69px;
+    @include respond-to(xl) {
+        background-position: -211px -75px;
+    }
+}
+
+.bitbon-info__link:hover.bitbon-info__link:nth-child(4) > .bitbon-info__button {
+    background-position: -205px -139px;
+    @include respond-to(xl) {
+        background-position: -211px -145px;
+    }
+    @include respond-to(sm) {
+        background-position: -211px -4px;
+    }
+}

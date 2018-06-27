@@ -1,0 +1,8 @@
+.bitbon-info__rectangle {
+    position: absolute;
+    top: -49px;
+    left: 0;
+    @include respond-to(md) {
+        display: none;
+    }
+}

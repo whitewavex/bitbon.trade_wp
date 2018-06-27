@@ -1,0 +1,31 @@
+$hiperlarge: 1599px;
+$suplarge: 1399px;
+$exlarge: 1199px;
+$large: 991px;
+$medium: 767px;
+$small: 575px;
+$exsmall: 480px;
+
+@mixin respond-to($media) {
+    @if $media == hl {
+        @media only screen and (max-width: $hiperlarge) { @content; }
+    }
+    @if $media == sl {
+        @media only screen and (max-width: $suplarge) { @content; }
+    }
+    @if $media == xl {
+        @media only screen and (max-width: $exlarge) { @content; }
+    }
+    @else if $media == lg {
+        @media only screen and (max-width: $large) { @content; }
+    }
+    @else if $media == md {
+        @media only screen and (max-width: $medium) { @content; }
+    }
+    @else if $media == sm {
+        @media only screen and (max-width: $small) { @content; }
+    }
+    @else if $media == xs {
+        @media only screen and (max-width: $exsmall) { @content; }
+    }
+}

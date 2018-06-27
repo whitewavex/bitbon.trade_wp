@@ -1,0 +1,13 @@
+.navigation__button_small {
+    color: #b2b2b2;
+    font-size: 12px;
+    
+    &::after {
+        background-color: #b2b2b2;
+    }
+    
+    .navigation__img {
+        background-position: 0 0;
+        margin-top: -4px;
+    }
+}

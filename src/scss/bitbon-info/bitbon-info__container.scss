@@ -1,0 +1,15 @@
+.bitbon-info__container {
+    background-color: #30a6e0;
+    background-image: linear-gradient(to top, #369aec, rgba(83,177,251,.72) 10%, rgba(99,200,252,.47) 19%, rgba(130,245,255,.55) 37%, #2496f2);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include respond-to(xl) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    @include respond-to(sm) {
+        padding-top: 100px;
+        background-image: none;
+        background-color: #f5a658;
+    }
+}

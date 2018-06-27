@@ -1,0 +1,10 @@
+.slider {
+    padding: 100px 90px 70px;
+    @include respond-to(lg) {
+        padding: 70px 90px;
+    }
+    
+    .slick-list {
+        z-index: 6;
+    }
+}

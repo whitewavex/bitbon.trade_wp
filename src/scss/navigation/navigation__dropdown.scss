@@ -1,0 +1,40 @@
+.navigation__dropdown {
+    top: 30px;
+    left: 0;
+    background-color: #2d3743;
+    padding: 20px;
+    z-index: 40;
+    @include respond-to(md) {
+        left: -60px;
+    }
+    @include respond-to(sm) {
+        left: -80px;
+    }
+    @include respond-to(xs) {
+        left: -100px;
+    }
+    
+    li {
+        padding-bottom: 15px;
+        
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    
+    a {
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        @include respond-to(xl) {
+            font-size: 12px;
+        }
+    }
+    
+    .current-menu-item {
+        
+        a {
+            text-decoration: underline;
+        }
+    }
+}

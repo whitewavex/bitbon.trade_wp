@@ -1,0 +1,12 @@
+.header__triangle {
+    position: absolute;
+    top: 72px;
+    right: 19.6%;
+    transition: .5s;
+    @include respond-to(xl) {
+        right: 19.5%;
+    }
+    @include respond-to(md) {
+        display: none;
+    }
+}

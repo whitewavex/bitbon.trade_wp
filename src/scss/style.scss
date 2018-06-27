@@ -1,0 +1,107 @@
+/*!
+Theme Name: Bitbon Trade
+Theme URI: http://bitbon.trade/
+Author: Alexandr Kovalenko
+Version: 1.0.0
+Description: Тема для информационного сайта или блога. Шрифт: Roboto (Regular, Light и Thin). Основные цвета: голубой, белый и оранжевый.
+*/
+
+/* BASE */
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/media';
+@import 'base/content';
+
+/* PAGE */
+
+@import 'page/page';
+
+/* CLEAR */
+
+@import 'clear/clear';
+
+/* INPUT */
+
+@import 'input/input';
+
+/* TEXTAREA */
+
+@import 'textarea/textarea';
+
+/* TRIANGLE */
+
+@import 'triangle/triangle';
+
+/* RECTANGLE */
+
+@import 'rectangle/rectangle';
+
+/* HEADER */
+
+@import 'header/header';
+@import 'header/header__wrapper';
+@import 'header/header__navigation';
+@import 'header/header__logo';
+@import 'header/header__triangle';
+@import 'header/header__rectangle';
+@import 'header/header_slide';
+@import 'header/header__navigation_slide';
+@import 'header/header__logo_slide';
+
+/* NAVIGATION */
+
+@import 'navigation/navigation';
+@import 'navigation/navigation__list';
+@import 'navigation/navigation__list_small';
+@import 'navigation/navigation__dropdown-wrapper';
+@import 'navigation/navigation__button';
+@import 'navigation/navigation__img';
+@import 'navigation/navigation__dropdown';
+@import 'navigation/navigation__button_small';
+@import 'navigation/navigation__dropdown_small';
+
+/* LOGO */
+
+@import 'logo/logo';
+@import 'logo/logo__img_slide';
+
+/* SLIDER-SECTION */
+
+@import 'slider-section/slider-section';
+@import 'slider-section/slider-section__wrapper';
+
+/* CANVAS */
+
+@import 'canvas/canvas';
+
+/* SLIDER */
+
+@import 'slider/slider';
+@import 'slider/slider__button';
+@import 'slider/slider__button_next';
+
+/* SLIDE */
+
+@import 'slide/slide';
+@import 'slide/slide__content';
+@import 'slide/slide__title';
+@import 'slide/slide__img';
+
+/* LINE */
+
+@import 'line/line';
+
+/* BITBON-INFO */
+
+@import 'bitbon-info/bitbon-info';
+@import 'bitbon-info/bitbon-info__rectangle';
+@import 'bitbon-info/bitbon-info__triangle';
+@import 'bitbon-info/bitbon-info__triangle_right';
+@import 'bitbon-info/bitbon-info__rectangle_right';
+@import 'bitbon-info/bitbon-info__container';
+@import 'bitbon-info/bitbon-info__link';
+@import 'bitbon-info/bitbon-info__title';
+@import 'bitbon-info/bitbon-info__button';
+@import 'bitbon-info/bitbon-info__text';

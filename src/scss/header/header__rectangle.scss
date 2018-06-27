@@ -1,0 +1,9 @@
+.header__rectangle {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    transition: .5s;
+    @include respond-to(md) {
+        display: none;
+    }
+}

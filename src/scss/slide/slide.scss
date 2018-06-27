@@ -1,0 +1,5 @@
+.slide {
+    @include respond-to(lg) {
+        flex-direction: column-reverse;
+    }
+}
