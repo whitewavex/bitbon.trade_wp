@@ -1,0 +1,16 @@
+.info-main {
+    background-image: url(images/info-main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include respond-to(lg) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @include respond-to(sm) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

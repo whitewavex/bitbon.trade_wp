@@ -38,6 +38,15 @@ Description: Тема для информационного сайта или б
 
 @import 'rectangle/rectangle';
 
+/* TITLE */
+
+@import 'title/title';
+@import 'title/title__name';
+
+/* BUTTON */
+
+@import 'button/button';
+
 /* HEADER */
 
 @import 'header/header';
@@ -105,3 +114,71 @@ Description: Тема для информационного сайта или б
 @import 'bitbon-info/bitbon-info__title';
 @import 'bitbon-info/bitbon-info__button';
 @import 'bitbon-info/bitbon-info__text';
+
+/* INFO-MAIN */
+
+@import 'info-main/info-main';
+@import 'info-main/info-main__title';
+@import 'info-main/info-main__line';
+@import 'info-main/info-main__content';
+
+/* NEWS */
+
+@import 'news/news';
+@import 'news/news__wrapper';
+@import 'news/news__bd-right';
+@import 'news/news__info';
+@import 'news/news__title';
+@import 'news/news__line';
+@import 'news/news__content';
+
+/* CAROUSEL */
+
+@import 'carousel/carousel';
+@import 'carousel/carousel__item';
+@import 'carousel/carousel__date';
+@import 'carousel/carousel__title';
+@import 'carousel/carousel__button';
+@import 'carousel/carousel__button_next';
+
+/* WELCOME */
+
+@import 'welcome/welcome';
+@import 'welcome/welcome__video';
+@import 'welcome/welcome__iframe';
+@import 'welcome/welcome__content';
+@import 'welcome/welcome__button';
+
+/* FOOTER */
+
+@import 'footer/footer';
+@import 'footer/footer__logo';
+@import 'footer/footer__logo_bt';
+@import 'footer/footer__rectangle';
+@import 'footer/footer__triangle';
+@import 'footer/footer__navigation';
+@import 'footer/footer__contacts';
+
+/* COPYRIGHT */
+
+@import 'copyright/copyright';
+
+/* PHONE */
+
+@import 'phone/phone';
+
+/* ADDRESS */
+
+@import 'address/address';
+
+/* SOCIAL */
+
+@import 'social/social__button';
+@import 'social/social__button_facebook';
+@import 'social/social__button_youtube';
+
+/* INFO */
+
+@import 'info/info';
+@import 'info/info__link';
+@import 'info/info__content';

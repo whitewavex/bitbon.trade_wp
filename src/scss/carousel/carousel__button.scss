@@ -1,0 +1,22 @@
+.carousel__button {
+    position: absolute;
+    top: -106px;
+    right: 120px;
+    background-color: transparent;
+    border: none;
+    opacity: .7;
+    cursor: pointer;
+    @include respond-to(xl) {
+        right: 90px;
+    }
+    @include respond-to(lg) {
+        right: 100px;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}

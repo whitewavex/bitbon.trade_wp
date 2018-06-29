@@ -1,0 +1,7 @@
+.copyright {
+    font-weight: 200;
+    color: #898989;
+    @include respond-to(sl) {
+        font-size: 14px;
+    }
+}

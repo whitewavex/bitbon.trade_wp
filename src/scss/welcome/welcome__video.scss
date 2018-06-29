@@ -1,0 +1,15 @@
+.welcome__video {
+    position: relative;
+    text-align: center;
+    padding: 30px 30px 25px;
+    margin-bottom: 40px;
+    @include respond-to(lg) {
+        margin-bottom: 60px;
+    }
+    @include respond-to(md) {
+        padding: 8px 8px 3px;
+    }
+    @include respond-to(xs) {
+        margin-bottom: 30px;
+    }
+}

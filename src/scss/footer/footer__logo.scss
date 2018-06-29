@@ -1,0 +1,9 @@
+.footer__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @include respond-to(md) {
+        display: none;
+    }
+}

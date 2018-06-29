@@ -1,0 +1,12 @@
+.news__content {
+    
+    p {
+        margin-bottom: 15px;
+        @include respond-to(xl) {
+            font-size: 15px;
+        }
+        @include respond-to(xs) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.address {
+    font-size: 14px;
+    color: #fff;
+    @include respond-to(sm) {
+        display: none;
+    }
+    
+    a {
+        color: #fff;
+    }
+}

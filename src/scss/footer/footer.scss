@@ -1,0 +1,17 @@
+.footer {
+    background-color: #2d3743;
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 19.6%;
+    padding-right: 17.6%;
+    @include respond-to(xl) {
+        padding-right: 20px;
+    }
+    @include respond-to(lg) {
+        padding-left: 25.6%;
+    }
+    @include respond-to(md) {
+        padding-top: 0;
+        padding-left: 20px;
+    }
+}

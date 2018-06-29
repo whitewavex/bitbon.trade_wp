@@ -1,0 +1,6 @@
+.news__bd-right {
+    border-right: 1px solid #d3d3d3;
+    @include respond-to(lg) {
+        border-right: none;
+    }
+}

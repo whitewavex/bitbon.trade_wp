@@ -1,0 +1,10 @@
+.footer__rectangle {
+    position: absolute;
+    width: 19.6%;
+    left: 0;
+    top: -50px;
+    background-color: #2d3743;
+    @include respond-to(md) {
+        display: none;
+    }
+}

@@ -1,0 +1,25 @@
+.carousel__item {
+    color: #080808;
+    width: 89.55% !important;
+    @include respond-to(sm) {
+        width: 70% !important;
+    }
+    @include respond-to(xs) {
+        width: 100% !important;
+    }
+    
+    &:hover {
+        text-decoration: none;
+        color: #080808;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,15 @@
+.phone {
+    font-size: 14px;
+    color: #fff;
+    max-width: 300px;
+    @include respond-to(sl) {
+        max-width: 200px;
+    }
+    @include respond-to(lg) {
+        display: none;
+    }
+    
+    a {
+        color: #fff;
+    }
+}

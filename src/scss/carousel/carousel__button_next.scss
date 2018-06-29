@@ -1,0 +1,8 @@
+.carousel__button_next {
+    transform: rotate(180deg);
+    top: -110px;
+    right: 40px;
+    @include respond-to(xl) {
+        right: 20px;
+    }
+}

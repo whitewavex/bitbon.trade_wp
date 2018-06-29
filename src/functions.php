@@ -146,7 +146,7 @@ function extra_fields_video_update( $post_id ){
 
     register_sidebar( array(
         'name' => 'Виджет в подвале слева',
-        'id' => 'info_text',
+        'id' => 'info_phone',
         'description' => 'Добавьте сюда виджет текст, в который добавьте свой адрес и телефоны',
         'before_widget' => '',
         'after_widget' => ''
@@ -156,7 +156,7 @@ function extra_fields_video_update( $post_id ){
 
     register_sidebar( array(
         'name' => 'Виджет в подвале справа',
-        'id' => 'info_contact',
+        'id' => 'info_address',
         'description' => 'Добавьте сюда виджет текст, в который добавьте свой e-mail адрес. Сделайте e-mail ссылкой',
         'before_widget' => '',
         'after_widget' => ''

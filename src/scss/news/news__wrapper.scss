@@ -1,0 +1,13 @@
+.news__wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include respond-to(lg) {
+        min-width: 767px;
+    }
+    @include respond-to(xs) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

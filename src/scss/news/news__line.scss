@@ -1,0 +1,7 @@
+.news__line {
+    margin-bottom: 40px;
+    @include respond-to(sm) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

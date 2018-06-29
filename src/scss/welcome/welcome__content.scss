@@ -1,0 +1,13 @@
+.welcome__content {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 60px;
+    text-align: justify;
+    @include respond-to(md) {
+        font-size: 16px;
+    }
+    @include respond-to(xs) {
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+}

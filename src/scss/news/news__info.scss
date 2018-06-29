@@ -1,0 +1,13 @@
+.news__info {
+    padding-left: 35px;
+    @include respond-to(xl) {
+        padding-left: 25px;
+    }
+    @include respond-to(lg) {
+        padding-left: 0;
+        margin-top: 80px;
+    }
+    @include respond-to(xs) {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,10 @@
+.footer__triangle {
+    position: absolute;
+    top: -50px;
+    left: 19.6%;
+    transform: rotate(180deg);
+    border-top: 50px solid #2d3743;
+    @include respond-to(md) {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.carousel {
+    
+    .slick-slide > div {
+        @include respond-to(sm) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

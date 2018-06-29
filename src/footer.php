@@ -28,7 +28,7 @@
 
         ?>
         
-    <div class="footer__info">
+    <div class="footer__contacts">
         <?php  
         
             if( date('Y') <= 2018 ) {
@@ -41,15 +41,15 @@
         ?>
         <p class="copyright footer__copyright">Bitbon Trade &copy; 2018<?php echo $copy; ?><br>Все права защищены</p>
         
-        <div class="address footer__address">
+        <div class="phone footer__phone">
            
-            <?php dynamic_sidebar('info_text') ?>
+            <?php dynamic_sidebar('info_phone') ?>
             
         </div>
 
-        <div class="contact footer__contact">
+        <div class="address footer__address">
            
-            <?php dynamic_sidebar('info_contact') ?>
+            <?php dynamic_sidebar('info_address') ?>
             
         </div>
         <div class="social">
@@ -58,23 +58,19 @@
         
         </div>
     </div>
-    <div class="footer__adds adds">
+    <div class="footer__info info">
         <div class="row">
             <div class="col-md-4 col-sm-5">
-                <p><a class="adds__link" target="_blank" href="https://www.simcord.com/">Официальный сайт Simcord</a></p>
-                <p><a class="adds__link" target="_blank" href="https://www.bitbon.space?ref=14639">Сайт Системы Bitbon</a></p>
-                <p><a class="adds__link" target="_blank" href="https://www.bit.trade/14639">Биржа Цифровых Активов</a></p>
+                <p><a class="info__link" target="_blank" href="https://www.simcord.com/">Официальный сайт Simcord</a></p>
+                <p><a class="info__link" target="_blank" href="https://www.bitbon.space?ref=14639">Сайт Системы Bitbon</a></p>
+                <p><a class="info__link" target="_blank" href="https://www.bit.trade/14639">Биржа Цифровых Активов</a></p>
             </div>
             <div class="col-md-8 col-sm-7">
-                <p class="adds__info">Сайт bitbon.trade представлен информационно-консультационным центром Киев UA-007 компании Simcord</p>
-                <p class="adds__info">Использование текста сайта bitbon.trade возможно только со ссылкой на данный ресурс</p>
+                <p class="info__content">Сайт bitbon.trade представлен информационно-консультационным центром Киев UA-007 компании Simcord</p>
+                <p class="info__content">Использование текста сайта bitbon.trade возможно только со ссылкой на данный ресурс</p>
             </div>
         </div>
     </div>
-    <a href="#page" class="button-up toTop">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </a>
-    <button class="button-open" sp-show-form="101760">Получить в подарок <strong>Bit</strong>bon</button>
 </footer>
 <script>
     var srcSite = '<?php bloginfo( 'template_url' ) ?>';

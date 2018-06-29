@@ -1,0 +1,9 @@
+.news__title {
+    margin-bottom: 20px;
+    @include respond-to(xl) {
+        font-size: 30px;
+    }
+    @include respond-to(sm) {
+        text-align: center;
+    }
+}
