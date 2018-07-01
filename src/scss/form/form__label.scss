@@ -1,0 +1,14 @@
+p.form__label {
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #909090;
+    @include respond-to(lg) {
+        font-size: 16px;
+    }
+    @include respond-to(xs) {
+        font-size: 14px;
+    }
+}

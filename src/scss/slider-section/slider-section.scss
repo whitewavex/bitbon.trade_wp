@@ -4,7 +4,8 @@
     padding-bottom: 30px;
     padding-top: 80px;
     @include respond-to(md) {
-        padding-top: 72px;
+        padding-top: 20px;
+        padding-bottom: 0;
     }
     @include respond-to(sm) {
         display: none;

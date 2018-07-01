@@ -9,7 +9,7 @@
     padding: 9px 15px;
     color: #909090;
     
-    &::focus {
+    &:focus {
         outline: none;
         border: 1px solid #30a6e0;
     }

@@ -1,0 +1,6 @@
+.copyright_lg {
+    display: none;
+    @include respond-to(lg) {
+        display: block;
+    }
+}

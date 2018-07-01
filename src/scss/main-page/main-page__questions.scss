@@ -1,0 +1,9 @@
+p.main-page__questions {
+    margin-bottom: 60px;
+    font-size: 21px;
+    color: #595f6b;
+    text-align: center;
+    @include respond-to(sm) {
+        font-size: 16px;
+    }
+}

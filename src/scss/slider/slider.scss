@@ -3,8 +3,32 @@
     @include respond-to(lg) {
         padding: 70px 90px;
     }
+    @include respond-to(md) {
+        padding: 70px 60px;
+    }
     
     .slick-list {
         z-index: 6;
+    }
+    
+    .slick-dots {
+        bottom: auto;
+        margin-left: -80px;
+        z-index: 8;
+        
+        li {
+            margin: 0 20px;
+            
+            button {
+                
+                &::before {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    border: 3px solid rgb(48, 166, 224);
+                    border-radius: 50%;
+                }
+            }
+        }
     }
 }

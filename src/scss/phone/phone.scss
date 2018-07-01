@@ -5,8 +5,9 @@
     @include respond-to(sl) {
         max-width: 200px;
     }
-    @include respond-to(lg) {
-        display: none;
+    @include respond-to(sm) {
+        max-width: 100%;
+        font-size: 18px;
     }
     
     a {

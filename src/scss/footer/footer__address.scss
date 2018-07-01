@@ -1,0 +1,6 @@
+.footer__address {
+    @include respond-to(sm) {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+}

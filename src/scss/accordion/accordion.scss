@@ -1,0 +1,7 @@
+.accordion {
+    margin-top: 70px;
+    padding-bottom: 80px;
+    @include respond-to(lg) {
+        margin-top: 50px;
+    }
+}

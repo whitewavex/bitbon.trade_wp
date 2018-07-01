@@ -1,0 +1,21 @@
+.accordion__button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: .3s;
+    text-align: left;
+    @include respond-to(md) {
+        font-size: 18px;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &:hover {
+        color: #30a6e0;
+        transition: .3s;
+    }
+}

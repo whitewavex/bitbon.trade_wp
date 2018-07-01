@@ -1,7 +1,6 @@
 .info-main {
     background-image: url(images/info-main_bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -9,8 +8,13 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
+    @include respond-to(md) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     @include respond-to(sm) {
         padding-top: 40px;
         padding-bottom: 40px;
+        border-bottom: 1px solid #d2d2d2;
     }
 }

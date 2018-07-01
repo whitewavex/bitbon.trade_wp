@@ -8,6 +8,12 @@
     padding-right: 15px;
     text-align: center;
     @include respond-to(xl) {
+        font-size: 18px;
+    }
+    @include respond-to(lg) {
+        font-size: 14px;
+    }
+    @include respond-to(md) {
         font-size: 20px;
     }
 

@@ -1,0 +1,5 @@
+.footer__copyright {
+    @include respond-to(lg) {
+        display: none;
+    }
+}

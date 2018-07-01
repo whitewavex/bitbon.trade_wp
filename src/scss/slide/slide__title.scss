@@ -9,6 +9,8 @@
         font-size: 35px;
     }
     @include respond-to(lg) {
-        font-size: 24px;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }

@@ -1,0 +1,6 @@
+.form__input {
+    margin-bottom: 20px;
+    @include respond-to(md) {
+        width: 100%;
+    }
+}

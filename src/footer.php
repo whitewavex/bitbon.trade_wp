@@ -60,7 +60,7 @@
     </div>
     <div class="footer__info info">
         <div class="row">
-            <div class="col-md-4 col-sm-5">
+            <div class="col-md-4 col-sm-5 mb-3">
                 <p><a class="info__link" target="_blank" href="https://www.simcord.com/">Официальный сайт Simcord</a></p>
                 <p><a class="info__link" target="_blank" href="https://www.bitbon.space?ref=14639">Сайт Системы Bitbon</a></p>
                 <p><a class="info__link" target="_blank" href="https://www.bit.trade/14639">Биржа Цифровых Активов</a></p>
@@ -68,9 +68,13 @@
             <div class="col-md-8 col-sm-7">
                 <p class="info__content">Сайт bitbon.trade представлен информационно-консультационным центром Киев UA-007 компании Simcord</p>
                 <p class="info__content">Использование текста сайта bitbon.trade возможно только со ссылкой на данный ресурс</p>
+                <p class="copyright copyright_lg">Bitbon Trade &copy; 2018<?php echo $copy; ?>. Все права защищены</p>
             </div>
         </div>
     </div>
+    <a href="#page" class="button-up toTop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
 </footer>
 <script>
     var srcSite = '<?php bloginfo( 'template_url' ) ?>';

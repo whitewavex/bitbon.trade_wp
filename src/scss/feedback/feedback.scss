@@ -1,0 +1,8 @@
+.feedback {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    background-color: #d9f3fe;
+    @include respond-to(md) {
+        padding: 50px 0 80px;
+    }
+}

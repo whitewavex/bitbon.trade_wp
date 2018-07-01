@@ -4,3 +4,6 @@
 //= slider.js
 //= carousel.js
 //= navigation__footer.js
+//= scroll__up.js
+//= text-button.js
+//= accordion.js

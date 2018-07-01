@@ -158,10 +158,14 @@ Description: Тема для информационного сайта или б
 @import 'footer/footer__triangle';
 @import 'footer/footer__navigation';
 @import 'footer/footer__contacts';
+@import 'footer/footer__copyright';
+@import 'footer/footer__phone';
+@import 'footer/footer__address';
 
 /* COPYRIGHT */
 
 @import 'copyright/copyright';
+@import 'copyright/copyright_lg';
 
 /* PHONE */
 
@@ -182,3 +186,38 @@ Description: Тема для информационного сайта или б
 @import 'info/info';
 @import 'info/info__link';
 @import 'info/info__content';
+
+/* BUTTON-UP */
+
+@import 'button-up/button-up';
+
+/* MAIN-PAGE */
+
+@import 'main-page/main-page';
+@import 'main-page/main-page__title';
+@import 'main-page/main-page__line';
+@import 'main-page/main-page__content';
+@import 'main-page/main-page__questions';
+@import 'main-page/main-page_pb';
+
+/* ACCORDION */
+
+@import 'accordion/accordion';
+@import 'accordion/accordion__card';
+@import 'accordion/accordion__title';
+@import 'accordion/accordion__button';
+@import 'accordion/accordion__content';
+@import 'accordion/accordion_open';
+
+/* FEEDBACK */
+
+@import 'feedback/feedback';
+@import 'feedback/feedback__explain';
+
+/* FORM */
+
+@import 'form/form__input';
+@import 'form/form__checkbox';
+@import 'form/form__button';
+@import 'form/form__button_lg';
+@import 'form/form__label';

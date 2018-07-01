@@ -9,5 +9,9 @@
         @include respond-to(xl) {
             padding-top: 15px;
         }
+        @include respond-to(lg) {
+            max-width: 48%;
+            margin: auto;
+        }
     }
 }

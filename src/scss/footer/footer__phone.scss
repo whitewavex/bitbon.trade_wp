@@ -1,0 +1,5 @@
+.footer__phone {
+    @include respond-to(sm) {
+        margin-bottom: 20px;
+    }
+}
