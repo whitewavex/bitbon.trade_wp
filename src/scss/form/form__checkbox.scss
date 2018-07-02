@@ -4,4 +4,7 @@
     font-style: italic;
     margin-bottom: 36px;
     color: #909090;
+    @include respond-to(lg) {
+        margin-bottom: 16px;
+    }
 }

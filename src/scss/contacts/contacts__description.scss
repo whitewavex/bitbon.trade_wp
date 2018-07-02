@@ -1,0 +1,9 @@
+.contacts__description {
+    font-size: 21px;
+    font-weight: 200;
+    font-style: italic;
+    color: #909090;
+    @include respond-to(xs) {
+        font-size: 18px;
+    }
+}

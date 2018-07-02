@@ -1,0 +1,42 @@
+.contacts__title-form {
+    position: relative;
+    font-size: 50px;
+    font-weight: 200;
+    color: #828181;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @include respond-to(lg) {
+        margin-top: 90px;
+    }
+    @include respond-to(xs) {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 540px;
+        height: 90px;
+        top: 0;
+        right: 0;
+        background-image: url(images/contacts.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include respond-to(xl) {
+            width: 450px;
+        }
+        @include respond-to(lg) {
+            right: auto;
+            left: 0;
+            top: -75px;
+        }
+        @include respond-to(sm) {
+            width: 410px;
+        }
+        @include respond-to(xs) {
+            width: 100%;
+            top: -50px;
+        }
+    }
+}

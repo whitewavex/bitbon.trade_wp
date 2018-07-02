@@ -8,6 +8,15 @@
     border-radius: 5px;
     padding: 9px 15px;
     color: #909090;
+    @include respond-to(lg) {
+        font-size: 19px;
+    }
+    @include respond-to(md) {
+        font-size: 22px;
+    }
+    @include respond-to(sm) {
+        font-size: 15px;
+    }
     
     &:focus {
         outline: none;

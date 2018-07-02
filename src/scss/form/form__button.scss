@@ -8,4 +8,7 @@
     @include respond-to(md) {
         width: 100%;
     }
+    @include respond-to(sm) {
+        font-size: 18px;
+    }
 }

@@ -1,0 +1,9 @@
+.contacts__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-transform: none;
+    color: #828181;
+    @include respond-to(xs) {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+.contacts {
+    background-color: #d9f3fe;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    @include respond-to(md) {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    @include respond-to(xs) {
+        padding-top: 120px;
+    }
+    
+    a {
+        color: #30a6e0;
+        
+        &:hover {
+            text-decoration: none;
+            color: #006ea4;
+        }
+    }
+}
