@@ -1,0 +1,9 @@
+.post {
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px rgba(173, 173, 173, 0.5);
+    margin-bottom: 60px;
+    @include respond-to(sm) {
+        box-shadow: none;
+        background-color: transparent;
+    }
+}

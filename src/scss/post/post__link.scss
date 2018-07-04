@@ -1,0 +1,9 @@
+.post__link {
+    color: $color;
+    display: inline-block;
+    
+    &:hover {
+        text-decoration: none;
+        color: $color;
+    }
+}

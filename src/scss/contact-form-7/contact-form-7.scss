@@ -1,0 +1,60 @@
+.wpcf7 {
+    font-size: 21px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.wpcf7-list-item {
+    margin: 0 5px;
+}
+
+span.wpcf7-not-valid-tip {
+    position: relative;
+    top: -64px;
+    left: 180px;
+    color: #fd850f !important;
+    @include respond-to(xl) {
+        top: -59px;
+        font-size: 16px !important;
+    }
+    @include respond-to(lg) {
+        top: -115px;
+        left: 20px;
+    }
+    @include respond-to(xs) {
+        left: 0;
+    }
+}
+
+.wpcf7 div.wpcf7-validation-errors {
+    color: #fd850f;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 1em;
+    border: none;
+    @include respond-to(xl) {
+        font-size: 16px;
+    }
+}
+
+.wpcf7 div.wpcf7-mail-sent-ok {
+    color: $color-bg;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 1em;
+    border: none;
+}
+
+.your-message span.wpcf7-not-valid-tip {
+    @include respond-to(lg) {
+        top: -334px;
+    }
+    @include respond-to(md) {
+        top: -352px;
+    }
+    @include respond-to(xs) {
+        top: -270px;
+    }
+}

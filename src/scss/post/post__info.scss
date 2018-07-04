@@ -1,0 +1,6 @@
+.post__info {
+    padding: 30px;
+    @include respond-to(sm) {
+        padding: 0;
+    }
+}

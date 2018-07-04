@@ -1,0 +1,6 @@
+.comment-form__button {
+    width: 55%;
+    @include respond-to(xl) {
+        width: 100%;
+    }
+}

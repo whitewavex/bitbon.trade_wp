@@ -1,0 +1,7 @@
+.blog__line {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @include respond-to(sm) {
+        margin-bottom: 40px;
+    }
+}

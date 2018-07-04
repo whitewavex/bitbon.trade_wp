@@ -1,5 +1,5 @@
 .carousel__item {
-    color: #080808;
+    color: $color;
     width: 89.55% !important;
     @include respond-to(sm) {
         width: 70% !important;
@@ -10,7 +10,7 @@
     
     &:hover {
         text-decoration: none;
-        color: #080808;
+        color: $color;
     }
     
     &:focus {

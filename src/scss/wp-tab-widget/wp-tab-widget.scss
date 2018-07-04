@@ -1,0 +1,62 @@
+.widget .wpt-tabs {
+    padding: 0;
+}
+
+.wpt_widget_content ul.wpt-tabs li {
+    border-bottom: none;
+}
+
+.wpt_widget_content .tab_title a {
+    font-size: 15px !important;
+    font-weight: normal !important;
+    color: #595f6b !important;
+    @include respond-to(xl) {
+        font-size: 13px !important;
+    }
+    @include respond-to(lg) {
+        font-size: 14px !important;
+    }
+    @include respond-to(xs) {
+        font-size: 12px !important;
+    }
+}
+
+.tab_title {
+    border-top: 3px solid #f0f0f0;
+}
+
+.selected {
+    border-top: 3px solid $color-bg;
+}
+
+.tab-content ul {
+    padding: 0;
+    padding-top: 25px;
+}
+
+.tab-content li {
+    list-style-image: none;
+}
+
+.wpt_widget_content .tab-content li {
+    padding: 10px 15px 10px 25px !important;
+}
+
+.wpt_widget_content .entry-title {
+    font-size: 14px;
+    font-weight: normal !important;
+    margin-bottom: 10px !important;
+}
+
+.wpt_widget_content a {
+    padding: 0;
+}
+
+.wpt-pagination {
+    padding-top: 20px !important;
+    font-size: 14px !important;
+}
+
+.wpt-pagination .next, .wpt-pagination .previous {
+    color: #595f6b;
+}

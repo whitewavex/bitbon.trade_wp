@@ -228,3 +228,68 @@ Description: Тема для информационного сайта или б
 @import 'contacts/contacts__title';
 @import 'contacts/contacts__description';
 @import 'contacts/contacts__title-form';
+
+/* BLOG */
+
+@import 'blog/blog';
+@import 'blog/blog__title';
+@import 'blog/blog__line';
+@import 'blog/blog__posts';
+
+/* POST */
+
+@import 'post/post';
+@import 'post/post__img';
+@import 'post/post__info';
+@import 'post/post__title';
+@import 'post/post__link';
+@import 'post/post__content';
+@import 'post/post__more';
+@import 'post/post__date';
+
+/* READ MORE */
+
+@import 'read-more/read-more';
+
+/* TAXONOMY */
+
+@import 'taxonomy/taxonomy';
+@import 'taxonomy/taxonomy__cat';
+@import 'taxonomy/taxonomy__name';
+
+/* COMMENTS */
+
+@import 'comments/comments';
+@import 'comments/comments__list';
+@import 'comments/comments__title';
+
+/* COMMENT */
+
+@import 'comment/comment';
+
+/* COMMENT-FORM */
+
+@import 'comment-form/comment-form';
+@import 'comment-form/comment-form__textarea';
+@import 'comment-form/comment-form__button';
+
+/* PAGINATION */
+
+@import 'pagination/pagination';
+
+/* SIDEBAR */
+
+@import 'sidebar/sidebar__widget';
+
+/* WIDGET */
+
+@import 'widget/widget';
+@import 'widget/widget__title';
+
+/* WP TAB WIDGET */
+
+@import 'wp-tab-widget/wp-tab-widget';
+
+/* CONTACT FORM 7 */
+
+@import 'contact-form-7/contact-form-7';

@@ -1,0 +1,178 @@
+.post__content {
+    margin-bottom: 25px;
+    
+    p {
+        font-size: 16px;
+        color: #595f6b;
+        line-height: 1.8;
+        margin-bottom: 10px;
+        @include respond-to(xs) {
+            font-size: 15px;
+        }
+    }
+    
+    img {
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+        color: #595f6b;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        @include respond-to(md) {
+            font-size: 36px;
+        }
+        @include respond-to(xs) {
+            font-size: 30px;
+            word-wrap: break-word;
+        }
+    }
+    
+    h2 {
+        font-size: 36px;
+        @include respond-to(md) {
+            font-size: 32px;
+        }
+        @include respond-to(xs) {
+            font-size: 28px;
+        }
+    }
+    
+    h3 {
+        font-size: 30px;
+        @include respond-to(md) {
+            font-size: 28px;
+        }
+        @include respond-to(xs) {
+            font-size: 24px;
+        }
+    }
+    
+    h4 {
+        font-size: 26px;
+        @include respond-to(md) {
+            font-size: 24px;
+        }
+        @include respond-to(xs) {
+            font-size: 22px;
+        }
+    }
+    
+    h5 {
+        font-size: 22px;
+        @include respond-to(md) {
+            font-size: 20px;
+        }
+    }
+    
+    h6 {
+        font-size: 20px;
+        @include respond-to(md) {
+            font-size: 18px;
+        }
+        @include respond-to(xs) {
+            font-size: 17px;
+        }
+    }
+    
+    ul, ol {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    ol {
+        counter-reset: section;
+        list-style-type: none;
+        
+        li {
+            padding-left: 20px;
+            position: relative;
+            margin-left: 7px;
+            
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -10px;
+                counter-increment: section;
+                content: counters(section, ".") ". ";
+            }
+            
+            ol {
+                
+                li {
+                    padding-left: 25px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    
+    ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    
+    li {
+        font-size: 18px;
+        color: #595f6b;
+        margin-bottom: 15px;
+        @include respond-to(md) {
+            font-size: 16px;
+        }
+        @include respond-to(xs) {
+            font-size: 15px;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    blockquote {
+        font-style: italic;
+        font-size: 18px;
+        @include respond-to(md) {
+            font-size: 16px;
+        }
+        @include respond-to(xs) {
+            font-size: 15px;
+        }
+    }
+    
+    a {
+        font-size: 18px;
+        color: $color-bg;
+        @include respond-to(md) {
+            font-size: 16px;
+        }
+        @include respond-to(xs) {
+            font-size: 15px;
+        }
+    }
+    
+    iframe {
+        width: 100%;
+        height: 377px;
+        margin-top: 20px;
+        @include respond-to(xl) {
+            height: 309px;
+        }
+        @include respond-to(lg) {
+            height: 354px;
+        }
+        @include respond-to(md) {
+            height: 253px;
+        }
+        @include respond-to(xs) {
+            height: 220px;
+        }
+    }
+}

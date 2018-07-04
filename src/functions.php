@@ -7,8 +7,8 @@ add_action( 'wp_enqueue_scripts', 'bitbon_trade_scripts' );
 function bitbon_trade_scripts(){
     
     wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'libs', get_template_directory_uri() . '/libs/libs.min.js', '', 3.3 );
-//    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/libs/bootstrap.js', array('jquery'), 4.1 , true);
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/libs/jquery.min.js', '', 3.3 );
+    wp_enqueue_script( 'libs', get_template_directory_uri() . '/libs/libs.min.js', array('jquery') );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.min.js', array('libs'), '1', true);
     
 }

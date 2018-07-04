@@ -1,0 +1,64 @@
+.widget {
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px rgba(173, 173, 173, 0.5);
+    
+    ul {
+        padding: 20px 25px;
+    }
+    
+    li {
+        list-style-image: url(images/cat_list.png);
+        list-style-position: inside;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 200;
+        border-bottom: 1px solid #d4d4d4;
+        @include respond-to(xl) {
+            font-size: 15px;
+        }
+        @include respond-to(lg) {
+            font-size: 16px;
+        }
+    }
+    
+    a {
+        padding-left: 10px;
+        color: $color;
+        
+        &:hover {
+            color: $color-bg;
+            text-decoration: none;
+        }
+    }
+    
+    input {
+        border: 1px solid #d4d4d4;
+        width: 85.6%;
+        margin: 20px 7.2%
+    }
+    
+    .tagcloud, .textwidget, .calendar_wrap {
+        padding: 20px;
+    }
+    
+    .gallery {
+        padding: 20px 0;
+    }
+}
+
+#wp-calendar {
+    margin: 0 auto;
+    
+    a {
+        padding: 0;
+    }
+    
+    thead {
+        border-bottom: 1px solid $color-bg;
+    }
+    
+    th, td {
+        width: 40px;
+    }
+}

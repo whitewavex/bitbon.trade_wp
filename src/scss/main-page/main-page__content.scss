@@ -160,7 +160,7 @@
     
     a {
         font-size: 18px;
-        color: #30a6e0;
+        color: $color-bg;
         @include respond-to(md) {
             font-size: 16px;
         }

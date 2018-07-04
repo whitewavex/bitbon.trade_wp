@@ -1,0 +1,8 @@
+.comments__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-family: $font;
+    @include respond-to(sm) {
+        font-size: 22px;
+    }
+}

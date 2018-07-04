@@ -37,6 +37,7 @@ const path = {
         fonts: dir.src + '/fonts/**/*.*', // шрифты
         libsScript: dir.src + '/libs/libs.js', // js файлы библиотек
         libsStyles: dir.src + '/libs/libs.scss', // css файлы библиотек
+        jquery: dir.src + '/jquery/jquery.js', // библиотека jquery
         screenshot: dir.src + '/screenshot.png' // файл скриншота
     },
     watch: {
@@ -46,6 +47,7 @@ const path = {
         images: dir.src + '/images/**/*.*',
         fonts: dir.src + '/fonts/**/*.*',
         libs: dir.src + '/libs/**/*.*',
+        jquery: dir.src + '/jquery/**/*.*',
         screenshot: dir.src + 'screenshot.png'
     },
     clean: dir.build
@@ -118,7 +120,15 @@ gulp.task('libs:css', function() {
         .pipe(gulp.dest(path.build.libs));
 });
 
-gulp.task('libs', gulp.parallel('libs:js', 'libs:css'));
+// Обработка библиотеки jquery
+gulp.task('jquery', function() {
+   return gulp.src(path.src.jquery)
+        .pipe(uglify()) // минификация библиотек js
+        .pipe(rename({suffix: '.min'})) // добавление суфикса в название итогового файла
+        .pipe(gulp.dest(path.build.libs));
+});
+
+gulp.task('libs', gulp.parallel('jquery', 'libs:js', 'libs:css'));
 
 // Копирование скриншота
 gulp.task('screenshot', function() {

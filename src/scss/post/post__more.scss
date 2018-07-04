@@ -1,0 +1,5 @@
+.post__more {
+    @include respond-to(sm) {
+        margin-bottom: 20px;
+    }
+}

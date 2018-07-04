@@ -1,0 +1,19 @@
+.blog {
+    padding-top: 110px;
+    padding-bottom: 70px;
+    background-color: #f9f9f9;
+    background-image: url(images/blog_bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include respond-to(md) {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    @include respond-to(sm) {
+        background-image: none;
+    }
+    @include respond-to(xs) {
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+}

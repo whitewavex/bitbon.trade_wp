@@ -6,7 +6,7 @@
     cursor: pointer;
     outline: none;
     text-transform: uppercase;
-    font-family: "Roboto";
+    font-family: $font;
     font-size: 13px;
     @include respond-to(xl) {
         font-size: 12px;

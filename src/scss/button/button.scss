@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
     border-radius: 3px;
-    background-color: #30a6e0;
+    background-color: $color-bg;
     background-image: linear-gradient(to bottom, #369aec, rgba(83,177,251,.72) 10%, rgba(99,200,252,.47) 19%, rgba(130,245,255,.55) 37%, #2496f2);
     text-align: center;
     color: #fff !important;

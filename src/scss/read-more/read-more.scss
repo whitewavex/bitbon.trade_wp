@@ -1,0 +1,19 @@
+.read-more {
+    display: block;
+    border-radius: 3px;
+    background-color: $color-bg;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    width: 134px;
+    padding: 7px 0;
+    text-align: center;
+    transition: .3s;
+    
+    &:hover {
+        color: #fff;
+        background-color: $color-bright;
+        text-decoration: none;
+        transition: .3s;
+    }
+}
