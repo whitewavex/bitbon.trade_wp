@@ -36,7 +36,7 @@
                                     <?php the_content('') ?>
                                 </div>
                                 <div class="post__more d-flex justify-content-between align-items-end">
-                                    <a href="<?php the_permalink() ?>" class="button-blue">Прочитать</a>
+                                    <a href="<?php the_permalink() ?>" class="read-more">Прочитать</a>
                                     <p class="post__date"><?php echo get_the_date('d.m.y') ?></p>
                                 </div>
 

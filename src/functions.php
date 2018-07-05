@@ -47,117 +47,26 @@ function slider_index() {
     register_post_type( 'slider_index', $args );
 }
 
-//    INFO MAIN
-
-add_action( 'init', 'info_main' );
-
-function info_main() {
-    
-    $args = array(
-        'public' => true,
-        'supports' => array( 'title', 'editor' ),
-        'menu_icon' => get_template_directory_uri() . '/images/info-main.png',
-        'labels' => array(
-            'name' => 'Информация на главной',
-            'all_items' => 'Вся информация',
-            'add_new' => 'Добавить информацию',
-            'add_new_item' => 'Новоя информация',
-            'edit_item' => 'Редактировать информацию',
-            'search_items' => 'Поиск информации'
-        )
-    );
-    
-    register_post_type( 'info_main', $args );
-}
-
-//    BUY VIDEO
-
-add_action( 'init', 'buy_video' );
-
-function buy_video() {
-    
-    $args = array(
-        'public' => true,
-        'supports' => array( 'title', 'editor'),
-        'menu_icon' => get_template_directory_uri() . '/images/video.png',
-        'labels' => array(
-            'name' => 'Блок "Видео"',
-            'all_items' => 'Вся информация',
-            'add_new' => 'Добавить информацию',
-            'add_new_item' => 'Новоя информация',
-            'edit_item' => 'Редактировать информацию',
-            'search_items' => 'Поиск информации'
-        )
-    );
-    
-    register_post_type( 'buy_video', $args );
-}
-
 //    META BOX FOR VIDEO
 
-add_action('add_meta_boxes', 'extra_fields_video', 1);
+include 'templates/meta_box_for_video.php';
 
-function extra_fields_video() {
-	add_meta_box( 'extra_fields', 'Дополнительные поля', 'extra_fields_box_video', 'buy_video', 'normal', 'high'  );
-}
-
-//    CODE META VIDEO
-
-function extra_fields_box_video( $post ){
-	?>
-
-	<p>Код видео:
-		<textarea type="text" name="extra[code_video]" style="width:60%; margin-left: 25px;"><?php echo get_post_meta($post->ID, 'code_video', 1); ?></textarea>
-	</p>
-    <p>Текст кнопки:
-		<textarea type="text" name="extra[button]" style="width:60%; margin-left: 10px;"><?php echo get_post_meta($post->ID, 'button', 1); ?></textarea>
-	</p>
-
-	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
-	<?php
-}
-
-//    UPDATE META VIDEO
-
-add_action('save_post', 'extra_fields_video_update', 0);
-
-//    SAVE DATA VIDEO
-
-function extra_fields_video_update( $post_id ){
-	if ( !isset($_POST['extra_fields_nonce']) || !wp_verify_nonce($_POST['extra_fields_nonce'], __FILE__) ) return false; // проверка
-	if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return false;
-	if ( !current_user_can('edit_post', $post_id) ) return false;
-
-	if( !isset($_POST['extra']) ) return false; 
-
-	$_POST['extra'] = array_map('trim', $_POST['extra']);
-	foreach( $_POST['extra'] as $key=>$value ){
-		if( empty($value) ){
-			delete_post_meta($post_id, $key);
-			continue;
-		}
-
-		update_post_meta($post_id, $key, $value);
-	}
-	return $post_id;
-}
-
-//    INFO FOOTER 1
+//    INFO FOOTER LEFT
 
     register_sidebar( array(
         'name' => 'Виджет в подвале слева',
         'id' => 'info_phone',
-        'description' => 'Добавьте сюда виджет текст, в который добавьте свой адрес и телефоны',
+        'description' => 'Добавьте сюда виджет текст, в который добавьте телефоны. Сделайте телефоны ссылкой формата "tel: номер телефона"',
         'before_widget' => '',
         'after_widget' => ''
     ) );
 
-//    INFO FOOTER 2
+//    INFO FOOTER RIGHT
 
     register_sidebar( array(
         'name' => 'Виджет в подвале справа',
         'id' => 'info_address',
-        'description' => 'Добавьте сюда виджет текст, в который добавьте свой e-mail адрес. Сделайте e-mail ссылкой',
+        'description' => 'Добавьте сюда виджет текст, в который добавьте адрес и свой e-mail. Сделайте e-mail ссылкой',
         'before_widget' => '',
         'after_widget' => ''
     ) );
@@ -172,7 +81,7 @@ function extra_fields_video_update( $post_id ){
         'after_widget' => ''
     ) );
 
-//    LOGO
+//    WIDGET LOGO
 
     register_sidebar( array(
         'name' => 'Логотип',
@@ -245,7 +154,7 @@ function searchform_html( $form ){
 	return $form;
 }
 
-//  SEARCH
+//  SEARCH FILTER
 
 add_filter('pre_get_posts','bitbon_search_filter');
 
@@ -258,30 +167,4 @@ function bitbon_search_filter( $query ) {
 
 //    ADD TEXT EXTRA MENU
 
-add_action( 'admin_init', 'bitbon_settings_init' );
-
-function bitbon_settings_init() {
-
-    add_settings_section( 'bitbon_setting_section', 'Название дополнительного меню',
-    'bitbon_setting_section', 'general' );
-
-    add_settings_field( 'bitbon_saved_setting_name_id', 'Введите текст для дополнительного меню',
-    'bitbon_setting_name', 'general', 'bitbon_setting_section' );
-
-    register_setting( 'general', 'bitbon_setting_values', 'bitbon_sanitize_settings' );
-    
-    function prowp_sanitize_settings( $input ) {
-        $input['name'] = sanitize_text_field( $input['name'] );
-        return $input;
-    }
-    
-    function bitbon_setting_section() {
-        echo '<p>Введите название дополнительного меню, которое отображается после слайдера</p>';
-    }
-    
-    function bitbon_setting_name() {
-        $bitbon_options = get_option( 'bitbon_setting_values' );
-        echo '<textarea type="text" name="bitbon_setting_values" style="width: 70%;">' . $bitbon_options . '</textarea>';
-    }
-
-}
+include 'templates/add_extra_text.php';

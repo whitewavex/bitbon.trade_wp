@@ -58,20 +58,8 @@ Template Name: Главная страница
 </section>
 <section class="info-main">
     <div class="container">
-    
-        <?php
 
-            $args = array(
-                'post_type' => 'info_main',
-                'posts_per_page' => 1,
-                'order' => 'ASC'
-            );
-
-            $info_main = new WP_Query($args);
-
-        ?>
-
-        <?php if ($info_main->have_posts()) :  while ($info_main->have_posts()) : $info_main->the_post(); ?>
+        <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 
             <div class="info-main__content">
             
@@ -129,59 +117,62 @@ Template Name: Главная страница
 
 <?php endif; ?>
 <?php wp_reset_postdata() ?>
+    
+<?php
+
+    $post_id = get_queried_object_id();
+
+    $args = array(
+        'post_type' => 'page',
+        'page_id' => $post_id
+    );
+?>
+
+<?php $video = new WP_Query($args) ?>
+
+<?php if ($video->have_posts()) :  while ($video->have_posts()) : $video->the_post(); ?>
+
+<?php $id = $post->ID; ?>
+
+<?php 
+
+$custom_video = get_post_meta($id, 'code_video');
+
+$custom_button = get_post_meta($id, 'button');
+
+?>
+
+<?php if( $custom_video[0] || $custom_button[0] ) : ?>
 
 <section class="welcome">
     <div class="container">
-    
-        <?php $args = array(
-            'post_type' => 'buy_video',
-            'posts_per_page' => 1,
-            'order' => 'ASC'
-        );  ?>
 
-        <?php $video = new WP_Query($args) ?>
+<?php endif; ?>
 
-        <?php if ($video->have_posts()) :  while ($video->have_posts()) : $video->the_post(); ?>
-            
-            <?php the_title('<h3 class="welcome__title d-none">', '</h3>') ?>
-            
-            <?php $id = $post->ID; ?>
-                            
-            <?php $custom = get_post_meta($id, 'code_video') ?>
+<?php if ( $custom_video[0] ) : ?>
 
-            <?php if ( $custom[0] ) : ?>
-            
-            <div class="welcome__video">
+    <div class="welcome__video">
 
-                <?php echo $custom[0] ?>
-                
-            </div>
-            
-            <?php endif; ?>
-            
-            <?php if ( get_the_content() ) : ?>
-            
-            <div class="welcome__content">
-                
-                <?php the_content() ?>
-                
-            </div>
-               
-            <?php endif; ?>
-                
-            <?php $id = $post->ID; ?>
-                            
-            <?php $custom = get_post_meta($id, 'button') ?>
-                
-            <?php if ( $custom[0] ) : ?>
+        <?php echo $custom_video[0] ?>
 
-                <a href="https://www.bit.trade/14639" target="_blank" class="welcome__button button button_sm"><?php echo $custom[0] ?></a>
-                
-            <?php endif; ?>
+    </div>
 
-        <?php endwhile; ?>
-        <?php endif; ?>
-    
+<?php endif; ?>
+
+<?php if ( $custom_button[0] ) : ?>
+
+    <a href="https://www.bit.trade/14639" target="_blank" class="welcome__button button button_sm"><?php echo $custom_button[0] ?></a>
+
+<?php endif; ?>
+
+<?php if( $custom_video[0] || $custom_button[0] ) : ?>
+
     </div>
 </section>
+
+<?php endif; ?>
+
+<?php endwhile; ?>
+<?php endif; ?>
+
 <?php get_footer() ?>
