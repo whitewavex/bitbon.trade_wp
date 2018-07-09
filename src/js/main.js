@@ -1,4 +1,5 @@
 //= navigation.js
+//= navigation_open.js
 //= navigation__scroll.js
 //= canvas.js
 //= slider.js
