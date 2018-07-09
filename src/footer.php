@@ -61,7 +61,6 @@
     <div class="footer__info info">
         <div class="row">
             <div class="col-md-4 col-sm-5 mb-3">
-                <p><a class="info__link" target="_blank" href="https://www.simcord.com/">Официальный сайт Simcord</a></p>
                 <p><a class="info__link" target="_blank" href="https://www.bitbon.space?ref=14639">Сайт Системы Bitbon</a></p>
                 <p><a class="info__link" target="_blank" href="https://www.bit.trade/14639">Биржа Цифровых Активов</a></p>
             </div>
