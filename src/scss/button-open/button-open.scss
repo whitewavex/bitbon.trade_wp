@@ -1,0 +1,39 @@
+.button-open {
+    position: fixed;
+    left: 20px;
+    top: 90px;
+    border: none;
+    background-color: #fd850f;
+    font-size: 15px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.3s;
+    @include respond-to(md) {
+        left: 0;
+        top: auto;
+        bottom: 0;
+        border-radius: 5px 5px 0 0;
+        font-size: 16px;
+        padding: 5px 25px;
+    }
+    
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: #fb9734;
+        transition: 0.3s;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    
+    i {
+        @include respond-to(md) {
+            font-size: 40px;
+        }
+    }
+}

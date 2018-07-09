@@ -75,6 +75,7 @@
     <a href="#page" class="button-up toTop">
         <i class="fa fa-chevron-up" aria-hidden="true"></i>
     </a>
+    <button class="button-open" sp-show-form="101760">Получить в подарок <strong>Bit</strong>bon</button>
 </footer>
 <script>
     var srcSite = '<?php bloginfo( 'template_url' ) ?>';

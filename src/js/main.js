@@ -7,3 +7,4 @@
 //= scroll__up.js
 //= text-button.js
 //= accordion.js
+//= button-popup.js
