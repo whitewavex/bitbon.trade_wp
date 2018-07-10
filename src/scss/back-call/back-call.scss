@@ -1,20 +1,24 @@
-.button-up {
-    display: none;
+.back-call {
+    display: block;
+    text-align: center;
     position: fixed;
-    right: 50%;
-    margin-right: -23px;
-    bottom: 0;
-    border: none;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
     background-color: $color-bg;
     background-image: linear-gradient(-30deg, #008fff, #53b1fb, rgba(0, 143, 255, 0.89) 34%, rgba(0, 143, 255, 0.89) 35%, rgba(0, 143, 255, 0.59) 53%, rgba(0, 143, 255, 0.43) 63%, rgba(0, 143, 255, 0.3) 74%, rgba(0, 143, 255, 0.06) 95%, rgba(83, 177, 251, 0));
-    font-size: 16px;
-    padding: 5px 15px;
-    color: #fff;
-    border-radius: 5px 5px 0 0;
-    z-index: 100;
-    cursor: pointer;
+    border-radius: 50%;
+    z-index: 200;
     
     &:hover {
+        background-color: #01abff;
+        background-image: none;
+    }
+    
+    i {
+        font-size: 38px;
         color: #fff;
+        margin-top: 20px;
     }
 }

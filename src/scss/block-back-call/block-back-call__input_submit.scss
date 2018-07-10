@@ -1,0 +1,18 @@
+.block-back-call__input_submit {
+    border: 1px solid #369aec;
+    background-color: #369aec;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    @include respond-to(md) {
+        margin-top: 20px;
+    }
+    @include respond-to(xs) {
+        margin-left: 0;
+    }
+    
+    &:hover {
+        border: 1px solid $color-bg;
+        background-color: $color-bg;
+    }
+}

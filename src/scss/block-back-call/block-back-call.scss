@@ -1,0 +1,52 @@
+.block-back-call {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left: -25%;
+    z-index: 400;
+    background-color: #3476c0;
+    width: 50%;
+    height: 270px;
+    padding: 70px;
+    text-align: center;
+    @include respond-to(sl) {
+        width: 60%;
+        margin-left: -30%;
+    }
+    @include respond-to(xl) {
+        width: 70%;
+        margin-left: -35%;
+    }
+    @include respond-to(lg) {
+        width: 90%;
+        margin-left: -45%;
+    }
+    @include respond-to(md) {
+        padding: 40px 15px;
+    }
+    
+    .wpcf7 {
+        
+        p {
+            display: inline !important;
+            width: 40% !important;
+            @include respond-to(md) {
+                display: block !important;
+                width: 100% !important;
+            }
+        }
+    }
+    
+    .wpcf7-not-valid-tip {
+        position: absolute !important;
+    }
+
+    .wpcf7 div.wpcf7-validation-errors {
+        color: #fff;
+        opacity: .7;
+        font-size: 16px;
+    }
+}

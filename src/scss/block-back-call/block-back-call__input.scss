@@ -1,0 +1,25 @@
+.block-back-call__input {
+    width: 40%;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    @include respond-to(md) {
+        width: 80%;
+    }
+    @include respond-to(xs) {
+        width: 100%;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    
+    &::placeholder {
+        color: #fff;
+        opacity: .5;
+    }
+}

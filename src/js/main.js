@@ -9,3 +9,6 @@
 //= text-button.js
 //= accordion.js
 //= button-popup.js
+//= back-call.js
+//= success-form.js
+//= inputmask.js

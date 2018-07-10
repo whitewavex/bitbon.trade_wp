@@ -168,3 +168,7 @@ function bitbon_search_filter( $query ) {
 //    ADD TEXT EXTRA MENU
 
 include 'templates/add_extra_text.php';
+
+//    CALLBACK
+
+include 'templates/callback.php';

@@ -75,6 +75,24 @@
         <i class="fa fa-chevron-up" aria-hidden="true"></i>
     </a>
     <button class="button-open" sp-show-form="101760">Получить в подарок <strong>Bit</strong>bon</button>
+    <a href="" class="back-call">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </a>
+    <div class="overlay"></div>
+    <div id="back-call" class="block-back-call">
+        <a href="" class="block-back-call__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.56" height="16.56" viewBox="0 0 16.56 16.562"><path d="M1406.36,378.222l1.42,1.414-14.14,14.142-1.42-1.414Zm-14.14,1.414,1.42-1.414,14.14,14.142-1.42,1.414Z" transform="translate(-1391.72 -377.719)"/></svg>
+        </a>
+        <h3 class="block-back-call__title">Оставьте свой номер и мы Вам перезвоним</h3>
+        <?php $form_callback = get_option( 'bitbon_callback_options' ); ?>
+        <?php echo do_shortcode($form_callback); ?>
+    </div>
+    <div id="success-callback" class="block-back-call block-back-call_success">
+        <a href="" class="block-back-call__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.56" height="16.56" viewBox="0 0 16.56 16.562"><path d="M1406.36,378.222l1.42,1.414-14.14,14.142-1.42-1.414Zm-14.14,1.414,1.42-1.414,14.14,14.142-1.42,1.414Z" transform="translate(-1391.72 -377.719)"/></svg>
+        </a>
+        <h3 class="block-back-call__title">Спасибо! Мы свяжемся с Вами в ближайшее время.</h3>
+    </div>
 </footer>
 <script>
     var srcSite = '<?php bloginfo( 'template_url' ) ?>';

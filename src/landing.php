@@ -53,7 +53,7 @@ Template Name: Главная страница
     <div class="triangle bitbon-info__triangle bitbon-info__triangle_right"></div>
     <div class="rectangle bitbon-info__rectangle bitbon-info__rectangle_right"></div>  
     <div class="bitbon-info__container">
-        <h4 class="bitbon-info__title"> <?php echo get_option( 'bitbon_setting_values' ); ?></h4>
+        <h4 class="bitbon-info__title"><?php echo get_option( 'bitbon_setting_values' ); ?></h4>
     </div>
 </section>
 <section class="info-main">
