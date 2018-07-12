@@ -1,0 +1,15 @@
+.social__button_telegram {
+    background-color: #32afed;
+    color: #fff;
+    
+    i {
+        font-size: 50px;
+        margin-top: -7px;
+        margin-left: -9px;
+    }
+    
+    &:hover {
+        background-color: #fff;
+        color: #32afed;
+    }
+}
