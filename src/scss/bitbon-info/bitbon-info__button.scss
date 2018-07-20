@@ -1,19 +1,25 @@
 .bitbon-info__button {
-    display: inline-block;
-    width: 96px;
-    height: 96px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-color: transparent;
-    background-image: url(images/info_sprites.png);
-    background-repeat: no-repeat;
-    background-position: 7px -71px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: .3s;
-    @include respond-to(xl) {
-        width: 86px;
-        height: 86px;
-        background-position: 2px -75px;
+    margin-top: 40px;
+    background-image: none;
+    background-color: $color-bright;
+    width: 551px;
+    height: 61px;
+    @include respond-to(md) {
+        width: 440px;
+    }
+    @include respond-to(sm) {
+        width: 100%;
+        font-size: 16px;
+        background-color: $color-bg;
+    }
+    @include respond-to(xs) {
+        font-size: 20px;
+    }
+    
+    &:hover {
+        background-color: #fd850f;
+        @include respond-to(sm) {
+            background-color: #01abff;   
+        }
     }
 }

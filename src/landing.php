@@ -53,7 +53,14 @@ Template Name: Главная страница
     <div class="triangle bitbon-info__triangle bitbon-info__triangle_right"></div>
     <div class="rectangle bitbon-info__rectangle bitbon-info__rectangle_right"></div>  
     <div class="bitbon-info__container">
-        <h4 class="bitbon-info__title"><?php echo get_option( 'bitbon_setting_values' ); ?></h4>
+        <?php $options = get_option( 'bitbon_setting_values' ); ?>
+        <h4 class="bitbon-info__title"><?php echo $options[name]; ?></h4>
+        <div class="container">
+            <div class="bitbon-info__video">
+                <?php echo $options[video]; ?>
+            </div>
+            <a href="https://www.bit.trade/14639" target="_blank" class="bitbon-info__button button button_sm"><?php echo $options[button]; ?></a>
+        </div>
     </div>
 </section>
 <section class="info-main">
